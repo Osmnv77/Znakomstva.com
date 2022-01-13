@@ -1,0 +1,20 @@
+.country {
+    display: flex;
+    align-items: center;
+    &__title {
+        @include font(16px,500);
+        text-transform: uppercase;
+        color: $text-white;
+        margin-right: 20px;
+    }
+    &__name {
+        @include font(16px,400);
+        color: $text-white;
+        margin: 0 10px;
+    }
+    &__choose {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,60 @@
+@import "./helpers/mixins";
+@import "./helpers/variables";
+
+@import "./components/header";
+@import "./components/country";
+@import "./components/logo";
+@import "./components/auth";
+@import "./components/buttons";
+@import "./components/footer";
+@import "./components/widgets";
+@import "./components/notification";
+
+@import "./sections/hero";
+@import "./sections/profile";
+
+@import "./pages/signUp";
+@import "./pages/ankets";
+@import "./pages/profile";
+
+body {
+    margin: 0;
+    background: #230e2b;
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+h1,
+p {
+    margin: 0;
+}
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+main {
+    position: relative;
+}
+
+.jelly__left {
+    position: absolute;
+    left: -50%;
+    top: -5%;
+    width: 100vw;
+    height: 80vh;
+    z-index: -1;
+}
+.jelly__right {
+    position: absolute;
+    right: -50%;
+    top: -5%;
+    width: 100vw;
+    height: 80vh;
+    z-index: -1;
+}

@@ -1,0 +1,76 @@
+.ankets {
+    .top {
+        &-meetings {
+            &__title {
+                @include font(28px,500);
+                color: $text-white;
+                margin: 0 0 20px;
+            }
+            &__content {
+                margin-bottom: 50px;
+            }
+        }
+        &-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 30px;
+            &__image {
+                width: 100%;
+                height: 350px;
+            }
+            &__content {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                padding: 20px 20px 70px;
+            }
+            &__name {
+                @include font(16px,500);
+                color: $text-white;
+                margin: 0 0 2px;
+            }
+            &__country {
+                @include font(12px,400);
+                display: flex;
+                align-items: center;
+                color: $text-white;
+                img {
+                    margin-right: 5px;
+                }
+            }
+            .btn-hi {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+    }
+    
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+
+    &__column {
+        padding: 10px;
+        box-sizing: border-box;
+        width: 20%;
+    }
+}
+.btn-hi {
+    @include font(14px,500);
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
+    border-radius: 40px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: $text-white;
+    padding: 15px 30px;
+    img {
+        margin-left: 10px;
+    }
+}

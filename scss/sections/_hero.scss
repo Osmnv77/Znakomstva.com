@@ -1,0 +1,17 @@
+.hero {
+    min-height: calc(100vh - 240px);
+    &__content {
+        max-width: 850px;
+        margin: auto;
+        color: $text-white;
+        text-align: center;
+        padding-top: 10vh;
+    }
+    &__title {
+        @include font(60px,500);
+        margin-bottom: 10px;
+    }
+    &__description {
+        @include font(16px,400);
+    }
+}

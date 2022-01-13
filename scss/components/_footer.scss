@@ -1,0 +1,29 @@
+.footer {
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-nav {
+        &__list {
+            display: flex;
+        }
+        &__link {
+            @include font(14px,400);
+            color: $text-white;
+        }
+        &__item {
+            margin-right: 30px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &-lang,
+    &__copyright,
+    &__policy {
+        @include font(14px,400);
+        color: $text-white; 
+    }
+}

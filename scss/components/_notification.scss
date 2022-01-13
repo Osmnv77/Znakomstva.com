@@ -1,0 +1,14 @@
+.notification {
+    position: relative;
+    &__count {
+        @include font(10px,500);
+        position: absolute;
+        right: -50%;
+        top: -50%;
+        transform: translateX(25%);
+        color: $text-white;
+        background: linear-gradient(90deg, $bg-pink 0%, $bg-orange 100%);
+        border-radius: 20px;
+        padding: 2px 5px;
+    }
+}

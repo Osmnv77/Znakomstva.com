@@ -1,0 +1,124 @@
+.profile {
+	padding: 30px 0;
+	width: 980px;
+	min-height: 600px;
+	&__swiper {
+		position: relative;
+		overflow: hidden;
+		.swiper-button-prev,
+		.swiper-button-next {
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+			border: 2px solid $bg-orange;
+			&:hover {
+				background: linear-gradient(90deg, $bg-pink 0%, $bg-orange 100%);
+			}
+			&::before,
+			&::after {
+				font-size: 0;
+			}
+			svg {
+				width: 15px;
+				height: 8px;
+			}
+		}
+		.swiper-button-prev {
+			left: 0;
+			svg {
+				transform: scale(4) rotate(90deg);
+			}
+		}
+		.swiper-button-next {
+			right: 0;
+			svg {
+				transform: scale(4) rotate(-90deg);
+			}
+		}
+	}
+	&__content {
+		display: flex;
+		color: $text-white;
+		padding: 0 100px;
+	}
+	&__info {
+		padding-left: 50px;
+	}
+	&__name {
+		@include font(32px, 500);
+		margin: 0;
+	}
+	.btn-hi {
+		margin: 10px 0 30px;
+	}
+	&__border_dashed {
+		border: 1px dashed #4a2956;
+		height: 0;
+		width: 100%;
+		margin: 0 20px;
+	}
+	&__height,
+	&__goal,
+	&__weight,
+	&__price,
+	&__eye-color,
+	&__hair-color {
+		@include font(16px, 400);
+		display: flex;
+		align-items: center;
+		white-space: nowrap;
+		margin-bottom: 10px;
+	}
+	&__price {
+		@include font(18px, 500);
+		margin-bottom: 20px;
+	}
+	&__desc-label {
+		@include font(18px, 500);
+		margin: 30px 0 5px;
+	}
+	&__description {
+		@include font(16px, 400);
+		margin-bottom: 20px;
+	}
+	&__date {
+		@include font(14px, 400);
+		color: #8b5d9a;
+	}
+	&__save {
+		position: absolute;
+		left: 30px;
+		top: 30px;
+		cursor: pointer;
+	}
+	&__like {
+		position: absolute;
+		bottom: 30px;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: linear-gradient(90deg, #ee0979 0%, #ff6a00 100%);
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+	&__photo {
+		position: relative;
+		img {
+			width: 380px;
+			height: 500px;
+		}
+	}
+	&__photos_little {
+		padding-top: 10px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__photo_litte {
+		width: 90px;
+		height: 90px;
+	}
+}

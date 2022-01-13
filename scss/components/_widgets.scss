@@ -1,0 +1,7 @@
+.widgets {
+    display: flex;
+    align-items: center;
+    &__search {
+        margin-right: 20px;
+    }
+}

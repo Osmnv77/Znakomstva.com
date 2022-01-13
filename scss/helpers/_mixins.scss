@@ -1,0 +1,51 @@
+@mixin font($size,$weigth) {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: $weigth;
+    font-size: $size;
+    line-height: 150%;
+}
+@mixin selectBirthDate() {
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+    input,select {
+        @include font(16px,400);
+        padding: 22px 30px;
+        border-radius: 50px;
+        background-color: $bg-purple-light;
+        border: none;
+        outline: none;
+        color: $text-violette; 
+}
+input {
+    width: 15%;
+    &::placeholder {
+        @include font(16px,400);
+        color:$text-violette; 
+    } 
+  }
+}
+@mixin genders() {
+    display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                width: 185px;
+                height: 70px;
+                border-radius: 50px;
+            }
+            div:first-of-type {
+                background: linear-gradient(90deg, #0575E6 0%, #021B79 100%);
+                box-shadow: 0px 20px 30px rgba(179, 34, 31, 0.1);
+            }
+            div:last-of-type {
+                border: 1px solid #EC008C; 
+}
+}
